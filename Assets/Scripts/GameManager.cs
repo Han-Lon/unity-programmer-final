@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
     }
 
+    //ABSTRACTION
     // Add to the current score
     public void UpdateScore(int scoreToAdd)
     {
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
+    // ABSTRACTION
     // Trigger a game over state
     public void GameOver()
     {

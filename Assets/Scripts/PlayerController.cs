@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class PlayerController : Unit
 {
+    //ENCAPSULATION
     public float moveSpeed { get; private set; } = 2.5f;
     public float jumpHeight { get; private set; } = 425f; 
     private Rigidbody2D playerRb;
@@ -20,6 +22,7 @@ public class PlayerController : Unit
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
+    // POLYMORPHISM
     // Update is called once per frame
     protected override void Update()
     {
