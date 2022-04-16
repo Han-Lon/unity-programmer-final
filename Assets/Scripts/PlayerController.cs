@@ -40,6 +40,7 @@ public class PlayerController : Unit
             isJumping = true;
         } else if (Input.GetKeyDown(KeyCode.Space) && isJumping && !isDoubleJumping)
         {
+            playerRb.velocity = Vector2.zero;
             playerRb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             isDoubleJumping = true;
         }
