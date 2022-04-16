@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//INHERITANCE
 public class EnemyController : Enemy
 {
     // In a real game, I'd build out separate controllers for the enemy classes, but this is just a demo
     
     [SerializeField] float moveSpeed = 5.0f;
 
+    // POLYMORPHISM
     // Update is called once per frame
     protected override void Update()
     {

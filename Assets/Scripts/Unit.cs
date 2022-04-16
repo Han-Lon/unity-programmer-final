@@ -6,6 +6,7 @@ public class Unit : MonoBehaviour
 {
     private float yBound = -6;
 
+    //ENCAPSULATION
     private float m_direction;
     public float direction
     {
